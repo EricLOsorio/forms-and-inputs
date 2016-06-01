@@ -1,0 +1,118 @@
+body {
+	background-color: green;
+}
+
+.wrapper {
+	position: relative;
+}
+
+
+
+.content {
+	position: absolute;
+	background-color: darkseagreen;
+	border: 5px inset aliceblue;
+	width: 50%;
+	left: 25%;
+	right: 25%;
+
+}
+
+.left {
+
+	float:left;
+	margin-left:10%;
+	width:33%%
+}
+
+.left input, .right input{
+	width:100%;
+
+}
+
+
+.right {
+
+	float:left;
+	margin-left:10%;
+	width:33%
+
+}
+
+label {
+	color: black;
+	font-weight: 700;
+}
+
+ input {
+	height: 2.5em;
+	width: 33%;
+	margin-bottom: 2.5em;
+	font-size:medium;
+}
+
+input.left-field, .left-label {
+	clear: both;
+	float: left;
+	margin-left: 10%;
+
+}
+
+input.right-field{
+	position:fixed;
+	float: right;
+	margin-right: 10%;
+}
+
+.right-label {
+	margin-left: 2em;
+}
+
+.email {
+	clear: both;
+	float: left;
+	margin-left: 10%;
+	width: 66%;
+}
+
+#submitbutton {
+	clear: both;
+	float: left;
+	margin-left: 10%;
+	border-radius: 10px;
+	background-color: darkred;
+	color: darkseagreen;
+	font-weight: 900;
+}
+
+h1 {
+	color:darkred;
+	margin-bottom: 2em;
+	text-align: center;
+	text-shadow: 2px 2px #ff0000;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+.button {
+  display: inline-block;
+  outline:none;
+  width:5%;
+  margin-bottom:2%;
+  float:right;
+  background-color: darkslategrey;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 30px;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button:hover{
+	background-color:red;
+	cursor:pointer;
+}
