@@ -1,0 +1,37 @@
+<!DOCUMENT <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Color Builder Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<a href="../../homepage.html"><input type="button" name="back" value="back" class="button"></a>
+	<div class="wrapper">
+		<div class="content">
+			<h1>Color Builder Form</h1>
+
+			<form id="colorform">
+				<div class="component-row">
+				<label>R-Component</label><input type="range" name="colors" min="0" max="255" step="5"><br><label class="start">0</label><label class="end">255</label>
+				</div>
+				<div class="component-row">
+					<label>G-Component</label><input type="range" name="colors" min="0" max="255" step="5"><br><label class="start">0</label><label class="end">255</label>
+				</div>
+				<div class="component-row">
+					<label>B-Component</label><input type="range" name="colors" min="0" max="255" step="5"><br><label class="start">0</label><label class="end">255</label>
+				</div>
+				<div class="component-row">
+					<label>alpha</label><input id="alpha" type="range" name="colors" min="0" max="1" step="0.01"><br><label class="start">0</label><label class="end">1</label>
+				</div>	
+
+			</form>
+
+				<textarea readonly id="color-area" name="color-area" form="colorform">Resulting Color</textarea>
+
+		</div>
+	</div>
+
+</body>
+</html>

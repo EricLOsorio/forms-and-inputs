@@ -1,0 +1,113 @@
+body {
+
+	background: linear-gradient(ivory,floralwhite,azure) ;
+}
+
+.wrapper {
+	position: relative;
+}
+
+.content {
+	position: absolute;
+	right:25%;
+	left:25%;
+	background-color: black;
+}
+
+label {
+	font-weight:700;
+	position: relative;
+	bottom: 0.2em;
+}
+
+form, #color-area {
+	position: relative;
+	left:25%;
+	right:25%;
+	width: 80%;
+	left:10%;
+	right:5%;
+
+}
+
+#color-area {
+	height: 20em;
+	margin-bottom: 5em;
+	background-color: white;
+	text-align: center;
+}
+
+input {
+	width:50%;
+	margin-left:2em
+}
+
+.component-row {
+	border-radius:5%;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.start {
+	position: relative;
+	left:7em;
+
+}
+
+.end {
+	position: relative;
+	left: 30em;
+}
+
+
+form div:nth-child(1) {
+	background-color:red;
+}
+
+form div:nth-child(2) {
+	background-color:green;
+}
+
+form div:nth-child(3) {
+	background-color:blue;
+}
+
+form div:nth-child(4) {
+	background-color:white;
+}
+
+#alpha {
+	position: relative;
+	left:4em;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+}
+
+.button {
+  display: inline-block;
+  outline:none;
+  margin-top:0;
+  width:10%;
+  margin-bottom:2%;
+ float:right;
+  background-color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 30px;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button:hover{
+	background-color:red;
+	cursor:pointer;
+}
