@@ -1,0 +1,105 @@
+.wrapper {
+	position: relative;
+}
+
+.content {
+	position: absolute;
+	left: 25%;
+	right: 25%;
+	background-color: lightcyan;
+	border: 3px inset black;
+}
+
+#header {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+#shipping {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.left-fields {
+	display: inline-block;
+	position: relative;
+	margin-left:4em;
+	width: 40%;
+	margin-bottom: 2em;
+
+
+}
+
+.right-fields {
+	display: inline-block;
+	position:relative;
+	margin-left:4em;
+	margin-bottom: 2em;
+	width: 40%;
+
+}
+
+div:nth-child(4){
+	display: block;
+}
+
+div:nth-child(6){
+	width:15%;
+}
+
+label{
+	display: block;
+}
+
+input{
+	display: inline-block;
+	width: 100%;
+
+}
+
+
+section + div {
+	width: 25%;
+	margin-left: -50;
+
+}
+
+
+#billcheck + #billquestion {
+	display: inline;
+	position: relative;
+	width: 25%;
+	left: 8em;
+	bottom: 1em;
+}
+
+#submitbutton {
+	position: relative;
+	left: 40%;
+	background-color:red;
+}
+
+.button {
+  display: inline-block;
+  outline:none;
+  margin-top:0;
+  width:10%;
+  margin-bottom:2%;
+ float:right;
+  background-color: darkslategrey;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 30px;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button:hover{
+	background-color:red;
+	cursor:pointer;
+}
