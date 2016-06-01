@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Credit Debit Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<a href="../../homepage.html"><input type="button" name="back" value="back" class="back-button"></a>
+	<div class="wrapper">
+		<div class="content">
+
+
+			<section>
+			<h1>Credit/Debit Form</h1>			
+				<form>
+					<label for="" >Type of Card</label>
+					<select id="typeofcard">
+						<option value=""></option>
+						<option value="Mastercard">MasterCard</option>
+						<option value="Visa">Visa</option>
+						<option value="Amex">American Express</option>
+						<option value="Discover">Discover</option>
+					</select><br>
+
+						<label for="">Credit Card Numbers</label>
+						<input type="text" name="creditcardnumbers" id="cardnumbers" maxlength="19" placeholder="xxxx-xxxx-xxxx-xxxx"><br>
+
+
+						<label for="">CVV</label>
+						<input type="text" name="cvv"" id="cvvinput" maxlength="4" placeholder="xxxx"><div class="circle">?<img class="cvvpic" src="images.jpg" alt="3 security numbers in back of card for Mastercard/Visa/Discover, 4 security numbers in front of AMEX card"></div>
+						
+						<label for="">Expiration Month</label>
+						<select>
+							<option>01</option>
+							<option>02</option>
+							<option>03</option>
+							<option>04</option>
+							<option>05</option>
+							<option>06</option>
+							<option>07</option>
+							<option>08</option>
+							<option>09</option>
+							<option>10</option>
+							<option>11</option>
+							<option>12</option>
+						</select>
+
+
+						<label for="">Expiration Year</label>
+						<select>
+							<option>2016</option>
+							<option>2017</option>
+							<option>2018</option>
+							<option>2019</option>
+							<option>2020</option>
+							<option>2021</option>
+							<option>2022</option>
+							<option>2023</option>
+							<option>2024</option>
+							<option>2025</option>
+							<option>2026</option>
+							<option>2027</option>
+							<option>2028</option>
+							<option>2029</option>
+							<option>2030</option>
+
+						</select>
+
+						<label for="">Name EXACTLY as it appears on the card</label>
+						<input type="text" name="name" placeholder="Name as it appears on card" id="nameoncard">
+
+						<input type="button" id="button" value="Submit" class="button">
+				
+				</form>
+
+			</section>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+body {
+	background-color:teal;
+}
+
+.wrapper {
+	position: relative;
+}
+
+.content{
+	position: absolute;
+	left:30%;
+	right:30%;
+	background-color: cyan;
+	border-bottom-left-radius:5%;
+	border-bottom-right-radius:5%;
+	border-bottom: 5px outset green;
+	border-left:15px inset green;
+	border-right:5px outset green;
+	border-top:15px inset green;
+
+}
+
+label:nth-child(14){
+	margin-bottom: 2em;
+}
+
+form>label{
+	margin-left:2em;
+
+}
+
+form div {
+
+	width:100%;
+	line-height: 1.5em;
+	margin-bottom: 2em;
+	margin-top: 2em;
+	background-color: red;
+}
+
+input {
+	background-color: paleturquoise;
+}
+
+
+form input {
+	width: 100%;
+}
+
+.circle {
+	display: inline-block;
+	font-family: 'Passion One', cursive, serif;
+	position: relative;
+	top:0.1em;
+	left:0.1em;
+	width: 20px;
+	height:20px;
+	border-radius: 50%;
+	border: 2px solid black;
+	text-align: center;
+	background-color:paleturquoise;
+	cursor: pointer;
+}
+
+.circle .cvvpic {
+	visibility: hidden;
+	position: absolute;
+	left:1.5em;
+	top: -2em;
+	z-index:1;
+}
+
+.circle:hover .cvvpic{
+	visibility: visible;
+}
+
+#cardnumbers {
+
+	margin-top: 2em;
+	width: 50%;
+	border-radius: 5px;
+	color:black;
+}
+
+
+#typeofcard {
+	height: 2em;
+	border-radius: 5px;
+	background-color:paleturquoise;
+
+}
+
+#cvvinput {
+	width:5%;
+	border-radius: 0.3em;
+}
+
+
+#nameoncard {
+	position: relative;
+	top:-2em;
+	margin-left: 2em;
+	width: 50%;
+}
+
+
+label {
+	display: inline-block;
+	top:2em;
+	margin-left:2em;
+	font-weight: 700;
+}
+
+h1 {
+
+	border-bottom:2px solid black;
+	margin-top:0;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	background-color:paleturquoise;
+	text-align: center;
+}
+
+.button, .back-button {
+  display: inline-block;
+  outline:none;
+  width:6em;
+  margin-bottom:2%;
+  float:right;
+  background-color: darkslategrey;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 30px;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button:hover, .back-button:hover{
+	background-color:green;
+	cursor:pointer;
+}
