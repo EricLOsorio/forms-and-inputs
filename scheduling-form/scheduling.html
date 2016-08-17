@@ -16,16 +16,16 @@
 
 	<section>
 
-		<form id="schedule-form">
+		<form id="scheduleform">
 
 		<div id="date">
 			<label for="">Enter Date</label><br>
-			<input type="date" name="date" id="datefield"> 
+			<input type="date" name="date" id="datefield" required> 
 		</div><br>
 
 		<div id="time">
 			<label for="">Enter Time</label><br>
-			<input type="time" name="time" id="timefield"> 
+			<input type="time" name="time" id="timefield" required> 
 		</div><br>
 		<div id="timezone">
 		<label for="">Select Time Zone</label><br>
@@ -117,26 +117,29 @@
 
 		<div id="contact">
 			<label for="">Enter Contact Number(no dashes)</label><br>
-			<input type="contact" pattern="[0-9]{10}" maxlength="10" name="contact" id="contactfield">
+			<input type="contact" name="contact" id="contactfield" required>
 		</div><br>
 
 
 		<div id="email">
 			<label for="">Enter eMail</label><br>
-			<input type="email" name="email" id="emailfield"> 
+			<input type="email" name="email" id="emailfield" required> 
 		</div><br>
 
 
 		<div id="textmessage">
 			<label for="">Type Message</label><br>
-			<textarea rows="10" cols="74" form="schedule-form" placeholder="Type your message here"></textarea>
+			<textarea rows="10" cols="74" form="scheduleform" placeholder="Type your message here" id=textarea></textarea>
 		</div><br>
 
-		<input type="button" value="Submit" id="submitbutton">
+		<input type="submit" value="submit" id="submitbutton">
 
 		</form>
 	</section>		
 
 	</div>
+
+		<script type="text/javascript" src="../js/validator.js"></script>
+		<script type="text/javascript" src="../js/schedule.js"></script>		
 </body>
 </html>
