@@ -4,58 +4,59 @@
 		<meta charset="UTF-8">
 		<title>Sign Up Form</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans' rel=
-		'stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<a href="http://ericlosorio.github.io/Multi-Page-Web-Site/"><input type="button" name="back" value="back" class="button"></a>
-		<div class="wrapper">
-			<div class="content">
-				<h1>Sign Up Form</h1>
+	 <a href="http://ericlosorio.github.io/Multi-Page-Web-Site/"><input type="button" name="back" value="back" class="button"></a>
+	  <div class="wrapper">
+		<div class="content">
+		 <h1>Sign Up Form</h1>
 
-					<form>
+		  <form id="signupForm">
 
-						<div class="left">
-						<label for="">First Name</label>
-						<input type="text" placeholder="First Name">
-						</div>
+			<div class="left">
+			<label for="">First Name</label>
+			<input name="fName" type="text" placeholder="First Name" required >
+			</div>
 
-						<div class="right">
-						<label for="">Last Name</label>
-						<input type="text" placeholder="Last Name">
-						</div>
-
-
-						<label for="" class="left-label">Date</label><br>
-						<input class="left-field" type="date" placeholder="mm/dd/yyyy">
-
-						<label for="" class="left-label">eMail</label><br>
-						<input class="email" type="email" placeholder="email">
-						
-						<label for="" class="left-label">Username</label><br>
-						<input class="left-field" type="text" placeholder="username">
-						
-					
-						<label for="" class="left-label">Password</label>
-						<input type="password" class="left-field" placeholder="password">
-
-						
-
-						<label for="" class="left-label">Confirm Password</label>
-						<input type="password" class="left-field" placeholder="confirm password">
-
-
-						<input id="submitbutton" type="button" value="Submit">
-
-
-					</form>
-
-
+			<div class="right">
+			<label for="">Last Name</label>
+			<input name="lName" type="text" placeholder="Last Name" required >
 			</div>
 
 
+			<label for="" class="left-label">Date of Birth</label><br>
+			<input name="birthDate" class="left-field" type="date" placeholder="mm/dd/yyyy" required>
+
+			<label for="" class="left-label">eMail</label><br>
+			<input name="email" class="email" type="email" placeholder="email" required >
+						
+			<label for="" class="left-label">Username</label><br>
+			<input name="uName" class="left-field" type="text" placeholder="username" >
+						
+					
+			<label for="" class="left-label">Password</label>
+			<input name="pwd" type="password" class="left-field" placeholder="password" required="">
+
+						
+
+			<label for="" class="left-label">Confirm Password</label>
+			<input name="confirmPwd" type="password" class="left-field" placeholder="confirm password" required>
+
+
+			<input id="submitbutton" type="submit" value="Submit">
+
+
+		  </form>
+
+
 		</div>
+
+
+	   </div>
 		
+		<script type="text/javascript" src="../js/validator.js"></script>
+		<script type="text/javascript" src="../js/signup.js"></script>
 	</body>
 </html>
 
