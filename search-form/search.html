@@ -16,10 +16,9 @@
 	<a href="http://ericlosorio.github.io/Multi-Page-Web-Site/"><input type="button" name="back" value="back" class="back-button"></a>
 			<h1>Search Form</h1>
 
-			<form>
+			<form id="searchForm">
 				<label for="categories">Pet Categories</label>
 				<select class="categories" name="Pet Categories">
-					<option value="none"></option>
 					<option value="DogsBreeds">Dogs</option>
 					<option value="CatBreeds">Cats</option>
 					<option value="Snakes">Snakes</option>
@@ -27,12 +26,12 @@
 					<option value="Fish">Fish</option> 
 					<option value="Arachnids">Spiders</option>
 					<option value="Rodents">Rodents</option>
-					<option value="Other">Other</option>
+					<option value="Other" selected>Other</option>
 				</select>
 				
-				<input type="text" placeholder="Search Term">
+				<input type="text" placeholder="Search Term" id="search" required>
 
-				<input class="button" type="button" value="Search">
+				<input id="button" type="submit" value="Search">
 
 			</form>
 
@@ -40,6 +39,8 @@
 
 	</div>
 
+		<script type="text/javascript" src="../js/validator.js"></script>
+		<script type="text/javascript" src="../js/search.js"></script>
 </body>
 
 </head>
