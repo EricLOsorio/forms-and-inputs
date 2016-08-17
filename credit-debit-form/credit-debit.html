@@ -8,16 +8,16 @@
 </head>
 <body>
 
-	<a href="http://ericlosorio.github.io/Multi-Page-Web-Site/"><input type="button" name="back" value="back" class="back-button"></a>
+	<a href="../../homepage.html"><input type="button" name="back" value="back" class="back-button"></a>
 	<div class="wrapper">
 		<div class="content">
 
 
 			<section>
 			<h1>Credit/Debit Form</h1>			
-				<form>
+				<form id="ccform">
 					<label for="" >Type of Card</label>
-					<select id="typeofcard">
+					<select id="typeofcard" required>
 						<option value=""></option>
 						<option value="Mastercard">MasterCard</option>
 						<option value="Visa">Visa</option>
@@ -26,14 +26,22 @@
 					</select><br>
 
 						<label for="">Credit Card Numbers</label>
-						<input type="text" name="creditcardnumbers" id="cardnumbers" maxlength="19" placeholder="xxxx-xxxx-xxxx-xxxx"><br>
+						<input type="text" name="creditcardnumbers"
+						 id="cardnumbers" maxlength="19" 
+						 placeholder="xxxx-xxxx-xxxx-xxxx" required><br>
 
 
 						<label for="">CVV</label>
-						<input type="text" name="cvv"" id="cvvinput" maxlength="4" placeholder="xxxx"><div class="circle">?<img class="cvvpic" src="images.jpg" alt="3 security numbers in back of card for Mastercard/Visa/Discover, 4 security numbers in front of AMEX card"></div>
+						<input type="text" name="cvv"" id="cvvinput" 
+						maxlength="4" placeholder="xxxx" required>
+						<div class="circle">?<img class="cvvpic" src="images.jpg"
+						 alt="3 security numbers in back of card for
+						  Mastercard/Visa/Discover, 4 security numbers in front
+						   of AMEX card"></div>
 						
 						<label for="">Expiration Month</label>
-						<select>
+						<select id="year" required>
+						    <option value=""></option>
 							<option>01</option>
 							<option>02</option>
 							<option>03</option>
@@ -50,7 +58,8 @@
 
 
 						<label for="">Expiration Year</label>
-						<select>
+						<select id="month" required>
+						    <option value=""></option>
 							<option>2016</option>
 							<option>2017</option>
 							<option>2018</option>
@@ -69,16 +78,21 @@
 
 						</select>
 
+                        <p></p>
 						<label for="">Name EXACTLY as it appears on the card</label>
-						<input type="text" name="name" placeholder="Name as it appears on card" id="nameoncard">
+						<p></p>
+						<input type="text" name="name" pattern="[A-Za-z\s]+"
+						placeholder="Name as it appears on card" id="nameoncard"
+						required>
 
-						<input type="button" id="button" value="Submit" class="button">
+						<input type="submit" id="button" value="Submit" class="button">
 				
 				</form>
 
 			</section>
 		</div>
 	</div>
-
+  <script type="text/javascript" src="../js/validator.js"></script>
+  <script type="text/javascript" src="../js/credit.js"></script>
 </body>
 </html>
