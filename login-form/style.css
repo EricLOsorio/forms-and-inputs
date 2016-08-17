@@ -13,7 +13,7 @@ body {
 	right:25%;
 }
 
-.formbox {
+#loginForm {
 	position: relative;
 	left:25%;
 	width: 50% ;
