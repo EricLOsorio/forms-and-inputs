@@ -17,22 +17,21 @@
 
 			<h1>What Is Your Favorite Hookup App?</h1>
 
-			<form>
-				<input type="radio" name="apps" value="Tinder"><label>Tinder</label><br>
-				<input type="radio" name="apps" value="Bumble"><label>Bumble</label><br>
-				<input type="radio" name="apps" value="Hinge"><label>Hinge</label><br>
-				<input type="radio" name="apps" value="CMB"><label>Coffee Meets Bagel(CMB)</label><br>
-				<input type="radio" name="apps" value="Skout"><label>Skout</label><br>
-				<input type="radio" name="apps" value="HighThere!"><label>HighThere!</label><br>
-				<input type="radio" name="apps" value="Happn"><label>Happn</label><br>
-				<input type="radio" name="apps" value="Tastebuds"><label>Tastebuds</label><br>
-				<input type="radio" name="apps" value="Score"><label>Score</label><br>
-				<input type="radio" name="apps" value="Clover"><label>Clover</label><br>
-				<input type="text" name="apps" placeholder="type your own favorite"><label>Other</label><br>
-				<button type="submit">
-					<img src="kiss.gif" alt="kiss.gif">
-					<label>Submit</label>
-				</button>
+			<form id="surveyForm">
+				<input type="radio" name="apps" value="Tinder" id="tinder" checked ><label>Tinder</label><br>
+				<input type="radio" name="apps" value="Bumble" id="bumble"><label>Bumble</label><br>
+				<input type="radio" name="apps" value="Hinge" id="hinge"><label>Hinge</label><br>
+				<input type="radio" name="apps" value="CMB" id="cmb"><label>Coffee Meets Bagel(CMB)</label><br>
+				<input type="radio" name="apps" value="Skout" id="skout"><label>Skout</label><br>
+				<input type="radio" name="apps" value="HighThere!" id="high" ><label>HighThere!</label><br>
+				<input type="radio" name="apps" value="Happn" id="happn"><label>Happn</label><br>
+				<input type="radio" name="apps" value="Tastebuds" id="tastebuds" ><label>Tastebuds</label><br>
+				<input type="radio" name="apps" value="Score" id="score" ><label>Score</label><br>
+				<input type="radio" name="apps" value="Clover" id="clover"><label>Clover</label><br>
+				<input type="radio" name="apps" value="Other" id="otherRadio" "><label>Other:</label>
+				<input type="text" name="other" placeholder="type your own favorite" id="other"><br>
+				<input type="submit" id="submitit" value="Submit" class="submitInput">
+				
 
 
 			</form>
@@ -40,6 +39,9 @@
 		</div>
 
 	</div>
+
+<script type="text/javascript" src="../js/validator.js"></script>
+<script type="text/javascript" src="../js/survey.js"></script>
 
 </body>
 
