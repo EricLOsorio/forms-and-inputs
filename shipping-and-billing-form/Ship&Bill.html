@@ -12,34 +12,35 @@
 		<div class="content">
 			<h1 id="header"> Shipping & Billing Form</h1>
 
-			<form>
+			<form id="shipBill">
 
-			<section id="shippingsection">
+			<section name="shippingsection" id="shippingsection">
 			<h2 id="shipping">Shipping Information</h2>
 
 				<div class="left-fields">
 				<label for="" id="fnamelabel">First Name</label>
-				<input type="text" name="name" placeholder="FirstName" id="fnameinput">
+				<input type="text" name="fnameinput" placeholder="FirstName"
+				 id="fnameship" required>
 				</div>
 
 				<div class="right-fields">
 				<label for="" id="Lnamelabel">Last Name</label>
-				<input type="text" name="name" placeholder="LastName" id="lnameinput">
+				<input type="text" name="name" placeholder="LastName" id="lnameship" required>
 				</div>
 
 				<div class="left-fields">
 				<label for="">Address</label>
-				<input type="text" name="address" placeholder="Address" id="addressinput">
+				<input type="text" name="address" placeholder="Address" id="addressship" required>
 				</div>
 
 				<div class="left-fields">
 				<label for="">City</label>
-				<input type="text" name="city" placeholder="City" id="cityinput">
+				<input type="text" name="city" placeholder="City" id="cityship" required>
 				</div>
 
 				<div class="left-fields">
 				<label for="">State</label>
-					<select name="state" size="1">
+					<select name="state" size="1" id="stateship" required>
 						<option selected value="">State...</option>
 						<option value="ZZ">None</option>
 						<option value="">-- UNITED STATES --</option>
@@ -121,12 +122,12 @@
 
 				<div class="right-fields">
 				<label for="">Zip Code</label>
-				<input type="text" name="zip" placeholder="zip" pattern="[0-9]{5}">
+				<input type="text" name="zip" placeholder="zip" pattern="[0-9,A-Za-z]{3,7}" id="zipship" required>
 				</div>
 
 				<div class="left-fields">
 				<label for="">Country</label>
-				<select name="country">
+				<select name="country" id="countryship" required>
 					<option value="">Country...</option>
 					<option value="AF">Afghanistan</option>
 					<option value="AL">Albania</option>
@@ -392,27 +393,28 @@
 
 				<div class="left-fields">
 				<label for="" id="fnamelabel">First Name</label>
-				<input type="text" name="name" placeholder="FirstName" id="fnameinput">
+				<input type="text" name="name" placeholder="FirstName"
+				 id="fnamebill" required>
 				</div>
 
 				<div class="right-fields">
 				<label for="" id="Lnamelabel">Last Name</label>
-				<input type="text" name="name" placeholder="LastName" id="lnameinput">
+				<input type="text" name="name" placeholder="LastName" id="lnamebill" required>
 				</div>
 
 				<div class="left-fields">
 				<label for="">Address</label>
-				<input type="text" name="address" placeholder="Address" id="addressinput">
+				<input type="text" name="address" placeholder="Address" id="addressbill" required>
 				</div>
 
 				<div class="left-fields">
 				<label for="">City</label>
-				<input type="text" name="city" placeholder="City" id="cityinput">
+				<input type="text" name="city" placeholder="City" id="citybill" required>
 				</div>
 
 				<div class="left-fields">
 				<label for="">State</label>
-					<select name="state" size="1">
+					<select name="state" size="1" id="statebill" required>
 						<option selected value="">State...</option>
 						<option value="ZZ">None</option>
 						<option value="">-- UNITED STATES --</option>
@@ -494,12 +496,12 @@
 
 								<div class="right-fields">
 				<label for="">Zip Code</label>
-				<input type="text" name="zip" placeholder="zip" pattern="[0-9]{5}">
+				<input type="text" name="zip" placeholder="zip" pattern="[0-9,A-Za-z]{3,7}" id="zipbill" required>
 				</div>
 
 				<div class="left-fields">
 				<label for="">Country</label>
-				<select name="country">
+				<select name="country" id="countrybill" required>
 					<option value="">Country...</option>
 					<option value="AF">Afghanistan</option>
 					<option value="AL">Albania</option>
@@ -753,11 +755,14 @@
 
 		</section>
 		<div id="submitbutton">
-		<input type="button" name="submit" value="Submit" id="submitform">
+		<input type="submit" name="submit" value="Submit" id="submitform">
 		</div>
 			</form>
 
 		</div>
 	</div>
+
+		<script type="text/javascript" src="../js/validator.js"></script>
+		<script type="text/javascript" src="../js/shipping.js"></script>		
 </body>
 </html>
