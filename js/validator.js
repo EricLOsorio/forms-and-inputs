@@ -7,20 +7,8 @@ var validator = {
   var emailComponents=input.split("@");
 
   if(emailComponents.length==2) { 
-	var address=emailComponents[0];
-	var domain=emailComponents[1];
-  var validDomain=domain.split("."); 
-  if(validDomain.length!=2){
-    return false;
-  } else {
-     if (validDomain[1].length!=3){
-      return false;
-     } else return true;
-  }
-  
+	  return true;
   } else  return false;
-
-  return false;
 
   },//isEmailAddress
 
