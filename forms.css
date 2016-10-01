@@ -1,0 +1,134 @@
+html {
+	background: url('images/matterhorn.jpg') no-repeat center center fixed;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-ms-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+}
+
+.wrapper {
+	position: relative;
+}
+
+
+.content {
+	position: absolute;
+	left:0;
+	right:0;
+	width:100%;
+
+}
+
+.name{
+	margin-bottom:0;
+}
+
+
+h2 {
+	margin-top:0;
+	float:right;
+}
+
+span {
+	text-decoration:underline;
+}
+
+.header {
+	position:relative;
+	margin-left:7%;
+	float:left;
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	color:black;
+
+}
+
+.container {
+	clear:both;
+	position:relative;
+    width:100%;
+    top:20px;
+
+}
+
+.forms-inputs{
+	position:relative;
+
+}
+
+label {
+
+	list-style-type: none;
+}
+
+.button {
+  display:inline;
+  height:50px;
+  width:100px;
+  margin-bottom:2%;
+  background-color: blue;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 30px;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button:hover {
+	background-color:#081854;
+
+}
+
+a {
+	text-decoration:none;
+}
+
+
+
+.form-input-list {
+	position:relative;
+	display:block;
+    top:-50px;
+
+/*
+	margin-right: 3em;*/
+	}
+
+div .projects, div .forms-inputs {
+	color:#081854;
+	text-shadow: 2px 2px red;
+
+}
+
+.screenshot{
+	position:absolute;
+	height:800px;
+	width:600px;
+	left:25%;
+	top:100px;
+	z-index:100;
+}
+
+.screenshot > img {
+    display:none;
+	position:absolute;
+	height:100%;
+	width:100%;
+}
+
+a.signUpLink:hover ~ .screenshot > img#signup,
+a.searchLink:hover ~ .screenshot > img#search,
+a.surveyLink:hover ~ .screenshot > img#survey,
+a.loginLink:hover ~ .screenshot > img#login,
+a.colorLink:hover ~ .screenshot > img#color,
+a.shippingLink:hover ~ .screenshot > img#shipping,
+a.scheduleLink:hover ~ .screenshot > img#scheduling,
+a.creditLink:hover ~ .screenshot > img#credit{
+	display:block;
+}
