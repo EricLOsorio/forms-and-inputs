@@ -118,6 +118,11 @@ h1 {
 }
 
 @media (max-device-width:1024px){
+
+  body{
+  	background-color:black;
+  }
+
   .content {
   	width:100vw;
   	height:80vw;
@@ -137,6 +142,11 @@ h1 {
 }
 
 @media (max-device-width:600px){
+  
+  body{
+  	background-color:navy;
+  }
+
   .content {
   	width:100vw;
   	height:80vw;
@@ -156,6 +166,11 @@ h1 {
 }
 
 @media (max-device-width:360px){
+
+  body{
+  	background-color:teal;
+  }
+
   .content {
   	width:100vw;
   	left:0;
