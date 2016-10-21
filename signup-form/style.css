@@ -116,3 +116,60 @@ h1 {
 	background-color:red;
 	cursor:pointer;
 }
+
+@media (max-device-width:1024px){
+  .content {
+  	width:100vw;
+  	height:80vw;
+  	left:0;
+  	right:0;
+  }
+  .button{
+    display: block;
+    outline:none;
+    width:25%;
+    margin-bottom:2%;
+    position:absolute;
+    top:90vw;
+    left:40vw;
+  }
+
+}
+
+@media (max-device-width:600px){
+  .content {
+  	width:100vw;
+  	height:80vw;
+  	left:0;
+  	right:0;  	
+  }
+  .button{
+  display: block;
+  outline:none;
+  width:25%;
+  margin-bottom:2%;
+  position:absolute;
+  top:90vw;
+  left:40vw;
+}
+
+}
+
+@media (max-device-width:360px){
+  .content {
+  	width:100vw;
+  	left:0;
+  	right:0;  	
+  }
+
+  .button{
+  display: block;
+  outline:none;
+  width:25%;
+  margin-bottom:2%;
+  position:absolute;
+  top:90vw;
+  left:40vw;
+}
+
+}
