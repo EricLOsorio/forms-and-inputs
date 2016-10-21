@@ -82,3 +82,58 @@ h1 {
 	background-color:red;
 	cursor:pointer;
 }
+
+@media (max-device-width:1024px){
+
+  html{
+    background-color:black;
+  }
+
+  .back-button{
+    display: block;
+    outline:none;
+    width:50%;
+    margin-bottom:2%;
+    position:absolute;
+    top:40vw;
+    left:10vw;
+  }
+
+}
+
+@media (max-device-width:600px){
+  
+  html{
+    background-color:navy;
+  }
+
+  .back-button{
+  display: block;
+  outline:none;
+  width:50%;
+  margin-bottom:2%;
+  position:absolute;
+  top:40vw;
+  left:10vw;
+}
+
+}
+
+@media (max-device-width:360px){
+
+  html{
+    background-color:green;
+  }
+
+
+  .back-button{
+  display: block;
+  outline:none;
+  width:50%;
+  margin-bottom:2%;
+  position:absolute;
+  top:40vw;
+  left:10vw;
+}
+
+}
