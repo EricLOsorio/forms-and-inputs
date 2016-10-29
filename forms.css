@@ -132,3 +132,59 @@ a.scheduleLink:hover ~ .screenshot > img#scheduling,
 a.creditLink:hover ~ .screenshot > img#credit{
 	display:block;
 }
+
+@media (max-device-width:360px) and (min-device-height:480px),
+       (max-device-width:600px) and (min-device-height:480px),
+       (max-device-width:1024px) and (min-device-height:480px){
+
+  h1{
+    font-size:3.5em;
+  }
+
+  .content {
+  	width:100vw;
+    height:115vh;
+  	left:0;
+  	right:0;  	
+  }
+
+  .header{
+  	margin:0;
+  }
+
+  .name{
+  	position:relative;
+  	margin-left:0;
+
+  }
+
+  h1.forms-inputs{
+  	left:30vw;
+  	font-size:3.5em;
+  }
+
+  h2{
+  	font-size:2em;
+  }
+
+  .links > a:nth-of-type(9){
+    display: block;
+    outline:none;
+    width:50%;
+    margin-bottom:2%;
+    position:absolute;
+    top:118vh;
+    left:30vw;
+    font-size:2em;
+  }
+
+  .button {
+    position:relative;
+	display:block;
+	border:1px solid purple;
+	width:10em;
+	left:30vw;
+	font-size:3em;
+  }
+
+}
