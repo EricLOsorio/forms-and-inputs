@@ -1,10 +1,10 @@
-html {
-	background-color: lightseagreen;
-
+html{
+  background-color:green;
 }
 
 .wrapper {
 	position: relative;
+
 }
 
 .content {
@@ -20,7 +20,9 @@ label {
 	position: relative;
 	display: block;
 	left: 40%;
+  width:20%;
 	font-size: 1.5em;
+
 }
 
 .categories, input{
@@ -86,54 +88,69 @@ h1 {
 @media (max-device-width:1024px){
 
   html{
-    background-color:black;
-  }
-
-  .back-button{
-    display: block;
-    outline:none;
-    width:50%;
-    margin-bottom:2%;
-    position:absolute;
-    top:40vw;
-    left:10vw;
+    background-color: olive;
   }
 
 }
 
 @media (max-device-width:600px){
-  
-  html{
-    background-color:navy;
-  }
 
-  .back-button{
-  display: block;
-  outline:none;
-  width:50%;
-  margin-bottom:2%;
-  position:absolute;
-  top:40vw;
-  left:10vw;
+html{
+  background-color:olivedrab;
 }
 
 }
 
 @media (max-device-width:360px){
 
-  html{
-    background-color:green;
-  }
+html{
+  background-color:seagreen;
+}
 
+}
 
-  .back-button{
+@media (max-device-width:360px) and (min-device-height:480px),
+       (max-device-width:600px) and (min-device-height:480px),
+       (max-device-width:1024px) and (min-device-height:480px){
+ 
+.content {
+  position: relative;
+  width: 100vw;
+  height:80vh;
+  left:0;
+}
+
+h1{
+  font-size:5em;
+}
+
+label{
+  font-size:4em;
+  width:50%;
+  left:30%;
+}
+
+.categories {
+  font-size:1.5em;
+}
+
+input{
+  font-size:1.5em;
+}
+
+#button{
+  font-size:2em;
+}
+
+.back-button{
   display: block;
   outline:none;
   width:50%;
   margin-bottom:2%;
   position:absolute;
-  top:40vw;
-  left:10vw;
-}
+  top:50vh;
+  left:25vw;
+  font-size:2em;
+  }
 
 }
