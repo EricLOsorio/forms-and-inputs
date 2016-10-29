@@ -199,7 +199,6 @@ h1 {
 
   #ccform > label:nth-of-type(4){
   	display:block;
-  	border:2px solid red;
   	width:8em;
   	margin-bottom:3.5em;
   }
@@ -207,7 +206,6 @@ h1 {
    #ccform > label:nth-of-type(5){
   	display:inline-block;
   	position:static;
-  	border:2px solid red;
   	width:8em;
   	margin-left:1em;
   	margin-bottom:3.5em;
