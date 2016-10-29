@@ -171,6 +171,7 @@ a.creditLink:hover ~ .screenshot > img#credit{
 
   h2{
   	font-size:2em;
+	color:white;
   }
 
   .links > a:nth-of-type(9){
@@ -187,7 +188,7 @@ a.creditLink:hover ~ .screenshot > img#credit{
   .button {
     position:relative;
 	display:block;
-	border:1px solid purple;
+	margin-bottom:2em;
 	width:10em;
 	left:30vw;
 	font-size:3em;
