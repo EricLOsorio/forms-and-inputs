@@ -193,5 +193,10 @@ a.creditLink:hover ~ .screenshot > img#credit{
 	left:30vw;
 	font-size:3em;
   }
+	       
+    .screenshot{
+	height:5em;
+	width:5em;
+}
 
 }
