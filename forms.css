@@ -197,6 +197,7 @@ a.creditLink:hover ~ .screenshot > img#credit{
     .screenshot{
 	height:35em;
 	width:30em;
+	top:-40em;
 }
 
 }
