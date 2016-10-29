@@ -103,3 +103,86 @@ section + div {
 	background-color:red;
 	cursor:pointer;
 }
+
+
+@media (max-device-width:1024px){
+	body{
+		background-color:blue;
+	}
+}
+
+@media (max-device-width:600px){
+	body{
+		background-color:skyblue;
+	}
+}
+
+@media (max-device-width:360px){
+	body{
+		background-color:slateblue;
+	}
+}
+
+@media (max-device-width:360px) and (min-device-height:400px),
+	   (max-device-width:600px) and (min-device-height:400px),
+	   (max-device-width:1024px) and (min-device-height:400px){
+  
+  .button{
+  	position:relative;
+  	top:130vh;
+  	width:50%;
+  	left:-5em;
+  	font-size:3em;
+  }
+
+  .content{
+  	left:0;
+  	right:0;
+  	height:128vh;
+  }
+
+  h1{
+  	font-size:3.5em;
+  }
+
+  h2{
+  	font-size:3em;
+  }
+
+  label{
+  	font-size:3.5em;
+  }
+
+  select{
+  	font-size:1.5em;
+  }
+
+  input{
+  	font-size:1.5em;
+  }
+
+  #billing{
+  	width:100%;
+  }
+
+  #billquestion{
+  	position:relative;
+    top:0.1em;
+    margin-left:-5.5em; 
+  	width:100%;
+  	font-size:3em;
+  }
+
+  #billcheck{
+  	position:relative;
+  	left:10%;
+  	width:1.5em;
+  	height:1.5em;
+  }
+
+  #submitbutton{
+  	top:2em;
+  	font-size:2.5em;
+  }
+
+}
