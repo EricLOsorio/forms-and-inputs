@@ -122,23 +122,6 @@ h1 {
   body{
   	background-color:black;
   }
-
-  .content {
-  	width:100vw;
-  	height:80vw;
-  	left:0;
-  	right:0;
-  }
-  .button{
-    display: block;
-    outline:none;
-    width:25%;
-    margin-bottom:2%;
-    position:absolute;
-    top:90vw;
-    left:40vw;
-  }
-
 }
 
 @media (max-device-width:600px){
@@ -147,32 +130,27 @@ h1 {
   	background-color:navy;
   }
 
-  .content {
-  	width:100vw;
-  	height:80vw;
-  	left:0;
-  	right:0;  	
-  }
-  .button{
-  display: block;
-  outline:none;
-  width:25%;
-  margin-bottom:2%;
-  position:absolute;
-  top:90vw;
-  left:40vw;
 }
 
-}
-
-@media (max-device-width:360px){
+@media(max-device-width:360px){
 
   body{
-  	background-color:teal;
+    background-color:teal;
+  }
+  
+}
+
+@media (max-device-width:360px) and (min-device-height:480px),
+       (max-device-width:600px) and (min-device-height:480px),
+       (max-device-width:1024px) and (min-device-height:480px){
+
+  h1{
+    font-size:3.5em;
   }
 
   .content {
   	width:100vw;
+    height:115vh;
   	left:0;
   	right:0;  	
   }
@@ -183,8 +161,18 @@ h1 {
   width:25%;
   margin-bottom:2%;
   position:absolute;
-  top:90vw;
+  top:118vh;
   left:40vw;
+  font-size:2em;
+}
+
+form{
+  font-size:3em;
+}
+
+form input{
+  font-size:0.5em;
 }
 
 }
+
