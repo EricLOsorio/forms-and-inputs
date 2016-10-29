@@ -145,3 +145,118 @@ h1 {
 	background-color:green;
 	cursor:pointer;
 }
+
+@media (max-device-width:1024px){
+	body{
+		background-color:seagreen;
+	}
+}
+
+@media (max-device-width:600px){
+	body{
+		background-color:skyblue;
+	}
+}
+
+@media (max-device-width:360px){
+	body{
+		background-color:lightblue;
+	}
+}
+
+@media (max-device-width:360px) and (min-device-height:400px),
+	   (max-device-width:600px) and (min-device-height:400px),
+	   (max-device-width:1024px) and (min-device-height:400px){
+  
+  .back-button{
+  	position:relative;
+  	top:100vh;
+  	width:50%;
+  	left:-7em;
+  	font-size:2em;
+  }
+
+  .content{
+  	left:0;
+  	right:0;
+  	height:95vh;
+  }
+
+  h1{
+  	font-size:3em;
+  }
+
+  label{
+  	font-size:2.5em;
+  }
+
+
+  #ccform > label:nth-of-type(3){
+
+  	margin-top:3em;
+  	margin-bottom:3em;
+  }
+
+  #ccform > label:nth-of-type(4){
+  	display:block;
+  	border:2px solid red;
+  	width:8em;
+  	margin-bottom:3.5em;
+  }
+
+   #ccform > label:nth-of-type(5){
+  	display:inline-block;
+  	position:static;
+  	border:2px solid red;
+  	width:8em;
+  	margin-left:1em;
+  	margin-bottom:3.5em;
+  }
+
+  #ccform > label:nth-of-type(6){
+
+  }
+
+  #nameoncard{
+  	margin-top:1em;
+  }
+   
+  #cvvinput {
+  	width:12%;
+	border-radius: 0.3em;
+   }
+
+   #ccform > select:nth-of-type(1){
+   	font-size:1.5em;
+   }
+
+   #ccform > select:nth-of-type(2){
+   	position:relative;
+   	display:inline;
+   	left:18em;
+   	top:-8em;
+   	font-size:1.5em;
+   }
+
+   #ccform > select:nth-of-type(3){
+   	font-size:1.5em;
+   }
+
+  .circle {
+	width:1.5em;
+	height:1.5em;
+	font-size:3em;
+   }
+
+   .button{
+   	margin-top:2em;
+   	width:25%;
+   	font-size:2em;
+   }
+
+
+
+  input{
+  	font-size:2.5em;
+  }
+}
