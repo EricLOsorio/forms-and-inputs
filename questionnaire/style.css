@@ -12,23 +12,26 @@ body {
 	left: 25%;
 	right: 25%;
 	background: linear-gradient(red, crimson,purple);
-
 	
 }
 
 form {
 	position: relative;
 	left: 35%;
-	width: 40%;
-
+	width: 60%;
 }
 
 input {
 	margin-bottom: 2em;
+
 }
 
 label {
 	font-size: 1.5em;
+}
+
+label:hover{
+  cursor:pointer;
 }
 
 h1 {
@@ -39,7 +42,7 @@ h1 {
 
 input:last-of-type {
 	height: 2em;
-	width:6em;
+	width:8em;
 	font-size: 1.7em;
 	font-family:cursive, Helvetica, serif;
 	background-color:red;
@@ -90,4 +93,46 @@ input:last-of-type{
 .submitInput:hover{
 	background-color:red;
 	cursor:pointer;
+}
+
+@media (max-device-width:1024px){
+
+  body{
+    background-color:#000063;
+  }
+
+}
+
+@media (max-device-width:600px){
+  
+  body{
+    background-color:#5A79A5;
+  }
+
+}
+
+@media (max-device-width:360px) and (min-device-height:480px),
+       (max-device-width:600px) and (min-device-height:480px),
+       (max-device-width:1024px) and (min-device-height:480px){
+
+
+  .content {
+    height:80vh;
+    width:100vw;
+    left:0;
+  }
+
+  form{
+    width:60vw;
+    font-size:1.5em;
+    line-height:2.5em;
+  }
+
+  .button {
+  display:block;
+  position:absolute;
+  top:80vh;
+  float:none;
+  border:5px solid red;
+  left:40%;
 }
