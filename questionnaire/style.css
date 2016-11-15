@@ -111,6 +111,14 @@ input:last-of-type{
 
 }
 
+@media (max-device-width:360px){
+  
+  body{
+    background-color:blue;
+  }
+
+}
+
 @media (max-device-width:360px) and (min-device-height:480px),
        (max-device-width:600px) and (min-device-height:480px),
        (max-device-width:1024px) and (min-device-height:480px){
