@@ -92,20 +92,20 @@ h1 {
 }
 
 @media (max-device-width:1024px){
-	body{
+	.content{
 		background-color:blue;
 	}
 }
 
 @media (max-device-width:600px){
-	body{
-		background-color:skyblue;
+	.content{
+		background-color:navy;
 	}
 }
 
 @media (max-device-width:360px){
-	body{
-		background-color:slateblue;
+	.content{
+		background-color:black;
 	}
 }
 
@@ -115,6 +115,10 @@ h1 {
   body{
   	margin:0;
   	padding:0;
+  }
+
+  h1{
+    color:white;
   }
 
   .button{
