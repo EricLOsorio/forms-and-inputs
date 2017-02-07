@@ -115,8 +115,8 @@ div .projects, div .forms-inputs {
 .screenshot{
 	position:absolute;
 	height:800px;
-	width:600px;
-	left:25%;
+	width:900px;
+	left:15%;
 	top:100px;
 	z-index:100;
 }
