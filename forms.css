@@ -88,7 +88,7 @@ label {
 
 .button:hover {
 	background-color:#081854;
-
+        cursor:pointer;
 }
 
 a {
